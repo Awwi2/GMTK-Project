@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LayertoIgnore: {fileID: 1037562563}
   Planets: []
-  speed: 1.5
+  speed: 2.333
   isDay: 1
   GlobalLightNight: 0.125
   GlobalLightDay: 0.125
