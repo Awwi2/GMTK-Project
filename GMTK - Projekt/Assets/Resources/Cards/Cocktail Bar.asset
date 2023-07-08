@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Neon-Sign
-  m_EditorClassIdentifier: Assembly-CSharp::NewBehaviourScript
-  name: Neon-Sign
-  description: A glowing Sign by the road that attracts more customers
-  effect1: + Popular
-  effect2: 
+  m_Name: Cocktail Bar
+  m_EditorClassIdentifier: Assembly-CSharp::Card
+  name: 'Cocktail Bar '
+  description: Drunk people spend more :)
+  effect1: + Money Per Person
+  effect2: + Rent
   effect3: 
   image: {fileID: 0}
   moneyModifier: 0
-  popularityModifier: 10
-  rentModifier: 0
+  popularityModifier: 0
+  rentModifier: 50
   riskModifier: 0
-  moneyPerPersonModifier: 0
+  moneyPerPersonModifier: 25
   rarity: 0

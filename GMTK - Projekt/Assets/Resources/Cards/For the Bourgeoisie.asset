@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
+  m_Name: For the Bourgeoisie
+  m_EditorClassIdentifier: 
+  name: For the Bourgeoisie
+  description: No more poor people
+  effect1: + Money Per Person
+  effect2: '- Popularity'
+  effect3: 
+  image: {fileID: 0}
+  moneyModifier: 0
+  popularityModifier: -5
+  rentModifier: 0
+  riskModifier: 0
+  moneyPerPersonModifier: 15
+  rarity: 0

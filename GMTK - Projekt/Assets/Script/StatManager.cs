@@ -57,4 +57,14 @@ public class StatManager : MonoBehaviour
         rent += 50;
         ren.text = "Rent: " + rent;
     }
+
+    public void UpdateValues()
+    {
+        mon.text = "Money: " + money;
+        mPP.text = "Money Per Person: " + moneyPerPerson;
+        pop.text = "Popularity: " + popularity;
+        r.text = "Risk: " + risk;
+        ren.text = "Rent: " + rent;
+
+    }
 }
