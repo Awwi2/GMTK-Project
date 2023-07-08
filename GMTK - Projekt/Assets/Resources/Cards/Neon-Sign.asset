@@ -9,18 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
   m_Name: Neon-Sign
-  m_EditorClassIdentifier: Assembly-CSharp::Card
+  m_EditorClassIdentifier: 
   name: Neon-Sign
   description: A glowing Sign by the road that attracts more customers
   effect1: + Popularity
   effect2: + Rent
   effect3: 
-  image: {fileID: 0}
+  image: {fileID: -7415955986125602904, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 10
-  rentModifier: 5
+  popularityModifier: 5
+  rentModifier: 15
   riskModifier: 0
   moneyPerPersonModifier: 0
   rarity: 0

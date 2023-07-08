@@ -12,21 +12,24 @@ public class ManageCards : MonoBehaviour
     public Text effect1_1;
     public Text effect2_1;
     public Text effect3_1;
-    public Image image1;
+    public Image image1_1;
+    public Image image2_1;
 
     public Text name2;
     public Text description2;
     public Text effect1_2;
     public Text effect2_2;
     public Text effect3_2;
-    public Image image2;
+    public Image image1_2;
+    public Image image2_2;
 
     public Text name3;
     public Text description3;
     public Text effect1_3;
     public Text effect2_3;
     public Text effect3_3;
-    public Image image3;
+    public Image image1_3;
+    public Image image2_3;
 
     private Card card1;
     private Card card2;
@@ -60,21 +63,24 @@ public class ManageCards : MonoBehaviour
         effect1_1.text = card1.effect1;
         effect2_1.text = card1.effect2;
         effect3_1.text = card1.effect3;
-        image1.sprite = card1.image;
+        image1_1.sprite = card1.image; 
+        image2_1.sprite = card1.image;
 
         name2.text = card2.name;
         description2.text = card2.description;
         effect1_2.text = card2.effect1;
         effect2_2.text = card2.effect2;
         effect3_2.text = card2.effect3;
-        image2.sprite = card2.image;
+        image1_2.sprite = card2.image;
+        image2_2.sprite = card2.image;
 
         name3.text = card3.name;
         description3.text = card3.description;
         effect1_3.text = card3.effect1;
         effect2_3.text = card3.effect2;
         effect3_3.text = card3.effect3;
-        image3.sprite = card3.image;
+        image1_3.sprite = card3.image;
+        image2_3.sprite = card3.image;
     }
 
     public void CardOne()
