@@ -50,12 +50,10 @@ public class ManageCards : MonoBehaviour
         card3 = cards[Random.Range(0, cards.Length)];
         while (card1 == card2)
         {
-            Debug.Log("test");
             card2 = cards[Random.Range(0, cards.Length)];
         }
         while (card1 == card3 || card2 == card3)
         {
-            Debug.Log("test");
             card2 = cards[Random.Range(0, cards.Length)];
         }
         name1.text = card1.name;
@@ -85,6 +83,7 @@ public class ManageCards : MonoBehaviour
 
     public void CardOne()
     {
+        Debug.Log("test");
         stats.money += card1.moneyModifier;
         stats.popularity += card1.popularityModifier;
         stats.rent += card1.rentModifier;

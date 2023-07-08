@@ -7,23 +7,22 @@ public class StatManager : MonoBehaviour
 {
     public int money = 1000;
     public int moneyPerPerson = 50;
-    public int peoplePerDay;
+    public int peopleToday;
     public int risk = 0;
     public int popularity = 10;
     public int rent = 200;
 
     public Text mon, mPP, r, pop, ren;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        peoplePerDay = popularity / 5;
-    }
-
     public void executeDay()
     {
-        peoplePerDay = popularity / 5;
-        money += moneyPerPerson * peoplePerDay;
+        int i = 6;
+        while(Random.Range(1,i) <= popularity)
+        {
+
+        }
+        peopleToday = popularity / 5;
+        money += moneyPerPerson * peopleToday;
         money -= rent;
         if(Random.Range(1,100) <= risk)
         {
