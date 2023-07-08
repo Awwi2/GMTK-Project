@@ -37,6 +37,8 @@ public class DayNightCycle2DEditor : Editor
         EditorGUILayout.PropertyField(GlobalLightSpeed, new GUIContent("Changing-Speed"));
         EditorGUILayout.Space();
         EditorGUILayout.PropertyField(LayertoIgnore, new GUIContent("Layer to Ignore"));
+        EditorGUILayout.HelpBox("This Layer will not collide with the lights.", MessageType.None);
+
 
 
         serializedObject.ApplyModifiedProperties();
