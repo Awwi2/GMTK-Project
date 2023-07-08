@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class spawnNPC : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float Spawnrate;
+    public GameObject[] NPCList;
+
+
     void Start()
     {
-        
+        SpawnNPC();
+    }
+    void reRun()
+    {
+        float spawnIn = Random.Range(20f / Spawnrate, 20f);
+        Debug.Log(spawnIn);
+        Invoke("SpawnNPC", spawnIn);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpawnNPC()
     {
-        
+        Instantiate(NPCList[Random.Range(0, 3)], transform.position, Quaternion.identity) ;
+        reRun();
     }
 }
