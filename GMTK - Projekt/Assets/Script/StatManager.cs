@@ -17,9 +17,11 @@ public class StatManager : MonoBehaviour
     public void executeDay()
     {
         int i = 6;
+        peopleToday = 0;
         while(Random.Range(1,i) <= popularity)
         {
-
+            peopleToday += 1;
+            i += 5;
         }
         peopleToday = popularity / 5;
         money += moneyPerPerson * peopleToday;
