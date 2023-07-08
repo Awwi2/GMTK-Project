@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
   m_Name: Well Managed
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  effect1: 
+  name: Well Managed?
+  description: Your hire has recently performed inhumanly well
+  effect1: '- Risk'
   effect2: 
   effect3: 
-  image: {fileID: 0}
+  image: {fileID: 2488537912807060428, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 0
+  popularityModifier: -5
   rentModifier: 0
-  riskModifier: 0
+  riskModifier: -2
   moneyPerPersonModifier: 0
   rarity: 0

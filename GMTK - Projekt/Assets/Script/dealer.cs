@@ -8,7 +8,6 @@ public class dealer : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
-    public bool isReady = false;
 
     void Update()
     {
@@ -25,7 +24,7 @@ public class dealer : MonoBehaviour
     }
     public void setReady()
     {
-        isReady = true;
+        //Here scene switch to Upgrade Select
         Destroy(this.gameObject);
     }
 

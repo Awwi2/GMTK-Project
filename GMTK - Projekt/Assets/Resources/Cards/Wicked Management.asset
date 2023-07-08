@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
   m_Name: Wicked Management
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  effect1: 
+  name: Wicked Management
+  description: 'Turn employees into Money! '
+  effect1: + Money
   effect2: 
   effect3: 
-  image: {fileID: 0}
-  moneyModifier: 0
-  popularityModifier: 0
+  image: {fileID: -3171552581871247763, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
+  moneyModifier: 20
+  popularityModifier: -10
   rentModifier: 0
-  riskModifier: 0
+  riskModifier: 2
   moneyPerPersonModifier: 0
   rarity: 0

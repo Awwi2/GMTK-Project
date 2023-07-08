@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: New Management
   m_EditorClassIdentifier: 
   name: New Management
-  description: You found him in an alleyway and decided to hire him. How nice of
-    you!
+  description: You found him in an alleyway and decided to hire him. Maybe He'll
+    gain some usefull Experience!
   effect1: + Risk
   effect2: 
   effect3: 

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
   m_Name: Legal Advisor
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  effect1: 
+  name: Legal Advisor
+  description: Seems useful...
+  effect1: + Loose less Money when sued
   effect2: 
   effect3: 
-  image: {fileID: 0}
+  image: {fileID: -5167807243808128219, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
   rentModifier: 0

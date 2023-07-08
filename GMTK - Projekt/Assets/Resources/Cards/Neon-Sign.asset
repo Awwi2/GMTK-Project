@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Neon-Sign
   m_EditorClassIdentifier: 
   name: Neon-Sign
-  description: A glowing Sign by the road that attracts more customers
+  description: A glowing Sign by the road that attracts more customers.
   effect1: + Popularity
   effect2: + Rent
   effect3: 

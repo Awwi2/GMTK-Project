@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Enhanced Shuffle
   m_EditorClassIdentifier: 
   name: Enhanced Shuffle
-  description: An advanced shuffling technique where the winning card is removed
-    from the deck
-  effect1: + Money Per Person
+  description: An advanced shuffling technique, where the winning card is removed
+    from the deck.
+  effect1: + Money per Person
   effect2: + Risk
   effect3: 
   image: {fileID: 5610456433865955097, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}

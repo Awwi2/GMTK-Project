@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Why Win?
   description: Yeah, why should the customers win?
-  effect1: + Money Per Person
+  effect1: + Money per Person
   effect2: + Risk
   effect3: 
   image: {fileID: -1145144668836272637, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}

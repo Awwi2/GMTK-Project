@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: For the Bourgeoisie
   m_EditorClassIdentifier: 
   name: For the Bourgeoisie
-  description: No more poor people
-  effect1: + Money Per Person
+  description: No more poor people!
+  effect1: + Money per Person
   effect2: '- Popularity'
   effect3: 
   image: {fileID: 3929718611160277314, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}

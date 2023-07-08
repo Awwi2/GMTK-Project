@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
   m_Name: Nice Guys
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  effect1: 
-  effect2: 
+  name: 'Nice Guys '
+  description: "How about we don\u2019t cheat?!"
+  effect1: '- Risk'
+  effect2: '- Money per Person'
   effect3: 
-  image: {fileID: 0}
+  image: {fileID: 2975849240591541955, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
   rentModifier: 0
-  riskModifier: 0
-  moneyPerPersonModifier: 0
+  riskModifier: 10
+  moneyPerPersonModifier: 10
   rarity: 0

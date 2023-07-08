@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
   m_Name: Good Samaritan
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  effect1: 
-  effect2: 
+  name: Good Samaritan
+  description: A nice guy.
+  effect1: '- Money per Person'
+  effect2: + Popularity
   effect3: 
-  image: {fileID: 0}
+  image: {fileID: -7800158105638691855, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 0
+  popularityModifier: 10
   rentModifier: 0
   riskModifier: 0
-  moneyPerPersonModifier: 0
+  moneyPerPersonModifier: -10
   rarity: 0
