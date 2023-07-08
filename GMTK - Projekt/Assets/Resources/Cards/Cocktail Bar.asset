@@ -17,7 +17,7 @@ MonoBehaviour:
   effect1: + Money Per Person
   effect2: + Rent
   effect3: 
-  image: {fileID: 0}
+  image: {fileID: -2922113337684369405, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
   rentModifier: 50
