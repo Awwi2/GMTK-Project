@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
-  m_Name: Free Samples
+  m_Name: Card Swap
   m_EditorClassIdentifier: 
-  name: Free Samples
-  description: If it works with cookies, it works with money!
-  effect1: '- Money'
-  effect2: + Popularity
+  name: 
+  description: 
+  effect1: 
+  effect2: 
   effect3: 
-  image: {fileID: -657809462729225012, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: -25
-  popularityModifier: 5
+  image: {fileID: 0}
+  moneyModifier: 0
+  popularityModifier: 0
   rentModifier: 0
   riskModifier: 0
   moneyPerPersonModifier: 0

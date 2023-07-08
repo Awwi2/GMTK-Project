@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 328376572}
   m_Layer: 0
   m_Name: dealer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,8 +757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29e63396b6fe624a80f3d16ea36b8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rb: {fileID: 0}
+  speed: 1
+  rb: {fileID: 328376575}
+  animator: {fileID: 328376573}
+  isReady: 0
 --- !u!95 &328376573
 Animator:
   serializedVersion: 3
@@ -884,7 +886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328376571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.61, y: -1.95, z: 0}
+  m_LocalPosition: {x: 10, y: -2, z: 0}
   m_LocalScale: {x: -2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1817,7 +1819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &791844306
 Transform:
   m_ObjectHideFlags: 0
@@ -2381,7 +2383,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5726181, y: -0.19632626}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2392,7 +2394,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86911607, y: 2.865099}
+  m_Size: {x: 1, y: 3}
   m_EdgeRadius: 0
 --- !u!4 &1277896899
 Transform:
@@ -2402,7 +2404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277896897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -1.5, z: -20}
+  m_LocalPosition: {x: 3.5, y: -1.5, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
