@@ -117,6 +117,7 @@ public class StatManager : MonoBehaviour
         FindUI();
 
         Debug.Log(money);
+        Debug.Log(mon);
         mon.text = money.ToString();
         mPP.text = moneyPerPerson.ToString();
         pop.text = popularity.ToString();
