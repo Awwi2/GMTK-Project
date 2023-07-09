@@ -2649,7 +2649,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1537661981}
   - component: {fileID: 1537661980}
-  - component: {fileID: 1537661979}
   m_Layer: 0
   m_Name: dealer_endpoint
   m_TagString: Finish
@@ -2657,20 +2656,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1537661979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537661978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e4be73b18a5eb4dbf4ea3cba409d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DayNightCycler: {fileID: 6743586690392530109}
-  dealer: {fileID: 4429441362137665646, guid: 39e475285c8000b4b9ec139ff6e2c3ba, type: 3}
 --- !u!61 &1537661980
 BoxCollider2D:
   m_ObjectHideFlags: 0
