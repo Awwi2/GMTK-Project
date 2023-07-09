@@ -8,7 +8,7 @@ public class StatManager : MonoBehaviour
 {
     public static StatManager Instance;
 
-    public int money = 1000;
+    public int money;
     public int moneyPerPerson = 50;
     public int peopleToday;
     public int risk = 0;
@@ -16,11 +16,11 @@ public class StatManager : MonoBehaviour
     public int rent = 200;
 
     Text[] Texts;
-    public Text mon;
-    public Text mPP;
-    public Text pop;
-    public Text r;
-    public Text ren;
+    private Text mon;
+    private Text mPP;
+    private Text pop;
+    private Text r;
+    private Text ren;
 
     public void FindUI()
     {
@@ -52,6 +52,9 @@ public class StatManager : MonoBehaviour
 
     private void Awake()
     {
+        UpdateValues();
+        Debug.Log("test");
+
         if (Instance != null)
         {
             Destroy(gameObject);
@@ -76,48 +79,49 @@ public class StatManager : MonoBehaviour
         peopleToday = popularity / 5;
         money += moneyPerPerson * peopleToday;
         money -= rent;
-        if(Random.Range(1,100) <= risk)
+        if(Random.Range(1,100) <= risk) //Getting Sued
         {
             money -= Random.Range(100, 1000);
             popularity -= Random.Range(10, 100);
-            pop.text = "Popularity: " + popularity;
+            pop.text = popularity.ToString();
         }
-        mon.text = "Money: " + money;
+        mon.text = money.ToString();
     }
 
     public void tempMPPPlus()
     {
         moneyPerPerson += 10;
-        mPP.text = "Money Per Person: " + moneyPerPerson;
+        mPP.text = moneyPerPerson.ToString();
     }
 
     public void tempRiskPlus()
     {
         risk += 5;
-        r.text = "Risk: " + risk;
+        r.text = risk.ToString();
     }
 
     public void tempPopPlus()
     {
         popularity += 2;
-        pop.text = "Popularity: " + popularity;
+        pop.text = popularity.ToString();
     }
 
     public void tempRentPlus()
     {
         rent += 50;
-        ren.text = "Rent: " + rent;
+        ren.text = rent.ToString();
     }
 
     public void UpdateValues()
     {
         FindUI();
 
-        mon.text = "Money: " + money;
-        mPP.text = "Money Per Person: " + moneyPerPerson;
-        pop.text = "Popularity: " + popularity;
-        r.text = "Risk: " + risk;
-        ren.text = "Rent: " + rent;
+        Debug.Log(money);
+        mon.text = money.ToString();
+        mPP.text = moneyPerPerson.ToString();
+        pop.text = popularity.ToString();
+        r.text = risk.ToString();
+        ren.text = rent.ToString();
 
     }
 }

@@ -83,7 +83,6 @@ public class ManageCards : MonoBehaviour
 
     public void CardOne()
     {
-        Debug.Log(StatManager.Instance.money);
         StatManager.Instance.money += card1.moneyModifier;
         StatManager.Instance.popularity += card1.popularityModifier;
         StatManager.Instance.rent += card1.rentModifier;

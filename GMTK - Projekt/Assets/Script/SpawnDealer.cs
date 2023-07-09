@@ -10,7 +10,7 @@ public class SpawnDealer : MonoBehaviour
 
     private void Awake()
     {
-        Invoke("spawn", 14f);
+        Invoke("spawn", 13f);
     }
 
     void spawn()
