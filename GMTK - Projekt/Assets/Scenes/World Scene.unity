@@ -3325,7 +3325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 10
 --- !u!222 &1642376583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3959,7 +3959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 50
 --- !u!222 &2082855372
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8988,7 +8988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LayertoIgnore: {fileID: 1037562563}
   Planets: []
-  speed: 3.4
+  speed: 5.6666665
   isDay: 1
   GlobalLightNight: 0.125
   GlobalLightDay: 0.125

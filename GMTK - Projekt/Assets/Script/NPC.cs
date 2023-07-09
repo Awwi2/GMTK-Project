@@ -7,7 +7,10 @@ public class NPC : MonoBehaviour
     public float speed = 2f;
     public Rigidbody2D rb;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        Physics2D.IgnoreCollision(GameObject.FindWithTag("Player").GetComponent<Collider2D>(), this.gameObject.GetComponent<Collider2D>());
+    }
     void Update()
     {
         rb.velocity = new Vector2(speed, rb.velocity.y);

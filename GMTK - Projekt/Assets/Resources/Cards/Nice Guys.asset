@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 'Nice Guys '
   description: "How about we don\u2019t cheat?!"
-  effect1: '- Risk'
-  effect2: '- Money per Person'
-  effect3: 
+  effect1: + Popularity
+  effect2: + Money per Person
+  effect3: '- Risk'
   image: {fileID: 2975849240591541955, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 0
+  popularityModifier: 5
   rentModifier: 0
   riskModifier: 10
   moneyPerPersonModifier: 10

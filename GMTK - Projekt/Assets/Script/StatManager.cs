@@ -9,10 +9,15 @@ public class StatManager : MonoBehaviour
     public static StatManager Instance;
 
     public int money;
+    [Min(0)]
     public int moneyPerPerson = 50;
+    [Min(0)]
     public int peopleToday;
+    [Min(0)]
     public int risk = 0;
+    [Min(0)]
     public int popularity = 10;
+    [Min(0)]
     public int rent = 200;
 
     Text[] Texts;
@@ -80,11 +85,15 @@ public class StatManager : MonoBehaviour
         money -= rent;
         if(Random.Range(1,100) <= risk) //Getting Sued
         {
-            money -= Random.Range(100, 1000);
+            money -= Random.Range(150, 1000);
             popularity -= Random.Range(10, 100);
             pop.text = popularity.ToString();
         }
         mon.text = money.ToString();
+        if ( money <= 0)
+        {
+            //implement Game Over Screen here
+        }
     }
 
     public void tempMPPPlus()
