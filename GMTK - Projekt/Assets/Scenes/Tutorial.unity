@@ -848,7 +848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &633357954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2394,7 +2394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "At night a suspicious Old Man\n wants to gift you a Card"
+  m_Text: At night our friend the shady homless person wants to gift you a Card
 --- !u!222 &2114190102
 CanvasRenderer:
   m_ObjectHideFlags: 0

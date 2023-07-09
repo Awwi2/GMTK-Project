@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Debug Scene.unity
     guid: 134813ebeeeb40a47b5c95ffbe424c7d
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 06e8dace334821f4fb99a18f4fea8151
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: b6487317d3b335245bb8fb3b1c38037b
   - enabled: 1
