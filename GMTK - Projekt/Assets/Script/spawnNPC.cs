@@ -10,8 +10,13 @@ public class spawnNPC : MonoBehaviour
 
     void Start()
     {
-        SpawnNPC();
         StatManager.Instance.UpdateValues();
+        if (StatManager.Instance.popularity != 0)
+        {
+            SpawnNPC();
+        }
+
+
     }
     void reRun()
     {
