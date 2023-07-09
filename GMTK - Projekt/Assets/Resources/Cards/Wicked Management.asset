@@ -15,12 +15,12 @@ MonoBehaviour:
   name: Wicked Management
   description: 'Turn employees into Money! '
   effect1: + Money
-  effect2: 
+  effect2: '- Popularity'
   effect3: 
   image: {fileID: -3171552581871247763, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 250
   popularityModifier: -10
-  rentModifier: 0
+  rentModifier: -50
   riskModifier: 10
   moneyPerPersonModifier: 0
   rarity: 0
