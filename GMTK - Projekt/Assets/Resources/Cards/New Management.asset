@@ -15,13 +15,13 @@ MonoBehaviour:
   name: New Management
   description: You found him in an alleyway and decided to hire him. Maybe He'll
     gain some usefull Experience!
-  effect1: '- Risk'
-  effect2: 
+  effect1: + Popularity
+  effect2: + Risk
   effect3: 
   image: {fileID: 2488537912807060428, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 2
+  popularityModifier: 3
   rentModifier: 0
-  riskModifier: -2
+  riskModifier: 2
   moneyPerPersonModifier: 0
   rarity: 0
