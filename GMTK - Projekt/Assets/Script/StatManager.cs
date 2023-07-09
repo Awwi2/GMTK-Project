@@ -27,6 +27,9 @@ public class StatManager : MonoBehaviour
     [Min(0)]
     public int day = 0;
     private int standartDay;
+    public bool neonSign;
+    public int sueMoney = 1000;
+    public int suePop = 10;
 
     Text[] Texts;
     private Text mon;
@@ -130,11 +133,17 @@ public class StatManager : MonoBehaviour
         }
         */
         day += 1;
+        if(day % 5 == 0)
+        {
+            rent += 50;
+            sueMoney += 200;
+            suePop += 10;
+        }
         money -= rent;
         if(Random.Range(1,100) <= risk) //Getting Sued
         {
-            money -= Random.Range(150, 1000);
-            popularity -= Random.Range(10, 100);
+            money -= Random.Range(sueMoney, risk * sueMoney + 1);
+            popularity -= Random.Range(suePop, risk * suePop + 1);
             pop.text = popularity.ToString();
         }
         mon.text = money.ToString();

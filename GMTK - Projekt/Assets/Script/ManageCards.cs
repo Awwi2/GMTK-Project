@@ -60,8 +60,16 @@ public class ManageCards : MonoBehaviour
         {
             card2 = cards[Random.Range(0, cards.Length)];
         }
+
         name1.text = card1.name;
-        description1.text = card1.description;
+        if(card1.name == "Neon-Sign" && StatManager.Instance.neonSign)
+        {
+            description1.text = "I Mean we already have that, but what about a Billboard?";
+        }
+        else
+        {
+            description1.text = card1.description;
+        }
         effect1_1.text = card1.effect1;
         effect2_1.text = card1.effect2;
         effect3_1.text = card1.effect3;
@@ -69,7 +77,14 @@ public class ManageCards : MonoBehaviour
         image2_1.sprite = card1.image;
 
         name2.text = card2.name;
-        description2.text = card2.description;
+        if (card1.name == "Neon-Sign" && StatManager.Instance.neonSign)
+        {
+            description2.text = "I Mean we already have that, but what about a Billboard?";
+        }
+        else
+        {
+            description2.text = card2.description;
+        }
         effect1_2.text = card2.effect1;
         effect2_2.text = card2.effect2;
         effect3_2.text = card2.effect3;
@@ -77,7 +92,14 @@ public class ManageCards : MonoBehaviour
         image2_2.sprite = card2.image;
 
         name3.text = card3.name;
-        description3.text = card3.description;
+        if (card1.name == "Neon-Sign" && StatManager.Instance.neonSign)
+        {
+            description3.text = "I Mean we already have that, but what about a Billboard?";
+        }
+        else
+        {
+            description3.text = card3.description;
+        }
         effect1_3.text = card3.effect1;
         effect2_3.text = card3.effect2;
         effect3_3.text = card3.effect3;
@@ -90,6 +112,18 @@ public class ManageCards : MonoBehaviour
         anim1.interactable = false;
         anim2.interactable = false;
         anim3.interactable = false;
+        if (card1.name == "Neon-Sign" && !StatManager.Instance.neonSign)
+        {
+            StatManager.Instance.neonSign = true;
+        } else if (card1.name == "Controlled Enviroment")
+        {
+            StatManager.Instance.money = 500;
+            StatManager.Instance.risk = 0;
+        } else if (card1.effect1 == "- Fine When Sued")
+        {
+            StatManager.Instance.sueMoney -= 500;
+            StatManager.Instance.suePop -= 5;
+        }
         StatManager.Instance.money += card1.moneyModifier;
         StatManager.Instance.popularity += card1.popularityModifier;
         StatManager.Instance.rent += card1.rentModifier;
@@ -105,6 +139,20 @@ public class ManageCards : MonoBehaviour
         anim1.interactable = false;
         anim2.interactable = false;
         anim3.interactable = false;
+        if (card2.name == "Neon-Sign" && !StatManager.Instance.neonSign)
+        {
+            StatManager.Instance.neonSign = true;
+        }
+        else if (card2.name == "Controlled Enviroment")
+        {
+            StatManager.Instance.money = 500;
+            StatManager.Instance.risk = 0;
+        }
+        else if (card2.effect1 == "- Fine When Sued")
+        {
+            StatManager.Instance.sueMoney -= 500;
+            StatManager.Instance.suePop -= 5;
+        }
         StatManager.Instance.money += card2.moneyModifier;
         StatManager.Instance.popularity += card2.popularityModifier;
         StatManager.Instance.rent += card2.rentModifier;
@@ -119,6 +167,20 @@ public class ManageCards : MonoBehaviour
         anim1.interactable = false;
         anim2.interactable = false;
         anim3.interactable = false;
+        if (card3.name == "Neon-Sign" && !StatManager.Instance.neonSign)
+        {
+            StatManager.Instance.neonSign = true;
+        }
+        else if (card3.name == "Controlled Enviroment")
+        {
+            StatManager.Instance.money = 500;
+            StatManager.Instance.risk = 0;
+        }
+        else if (card3.effect1 == "- Fine When Sued")
+        {
+            StatManager.Instance.sueMoney -= 500;
+            StatManager.Instance.suePop -= 5;
+        }
         StatManager.Instance.money += card3.moneyModifier;
         StatManager.Instance.popularity += card3.popularityModifier;
         StatManager.Instance.rent += card3.rentModifier;

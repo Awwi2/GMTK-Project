@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Shady Advisor
   description: "They\u2019ll never know!"
-  effect1: + Risk
-  effect2: + Loose less Money when sued
+  effect1: '- Fine When Sued'
+  effect2: + Risk
   effect3: 
   image: {fileID: -16766654373697830, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
