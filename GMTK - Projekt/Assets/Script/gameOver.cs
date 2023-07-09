@@ -19,6 +19,10 @@ public class gameOver : MonoBehaviour
     {
         Time.timeScale = 1f;
         StatManager.Instance.ResetValues();
+        Invoke("loadWorld",0.2f);
+    }
+    private void loadWorld()
+    {
         GameOverScreen.SetActive(false);
         SceneManager.LoadScene("World Scene");
     }
@@ -26,6 +30,10 @@ public class gameOver : MonoBehaviour
     {
         Time.timeScale = 1f;
         StatManager.Instance.ResetValues();
+        Invoke("loadMenu", 0.2f);
+    }
+    private void loadMenu()
+    {
         SceneManager.LoadScene("Menu");
     }
 }

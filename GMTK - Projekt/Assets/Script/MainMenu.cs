@@ -9,6 +9,11 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
 
+        Invoke("loadWorld", 0.2f);
+    }
+    private void loadWorld()
+    {
         SceneManager.LoadScene("World Scene");
+
     }
 }
