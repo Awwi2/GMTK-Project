@@ -53,7 +53,6 @@ public class StatManager : MonoBehaviour
     private void Awake()
     {
         UpdateValues();
-        Debug.Log("test");
 
         if (Instance != null)
         {
@@ -116,13 +115,12 @@ public class StatManager : MonoBehaviour
     {
         FindUI();
 
-        Debug.Log(money);
-        Debug.Log(mon);
         mon.text = money.ToString();
         mPP.text = moneyPerPerson.ToString();
         pop.text = popularity.ToString();
         r.text = risk.ToString();
         ren.text = rent.ToString();
+
 
     }
 }

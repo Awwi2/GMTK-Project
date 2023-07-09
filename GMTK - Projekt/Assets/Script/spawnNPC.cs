@@ -11,6 +11,7 @@ public class spawnNPC : MonoBehaviour
     void Start()
     {
         SpawnNPC();
+        StatManager.Instance.UpdateValues();
     }
     void reRun()
     {
