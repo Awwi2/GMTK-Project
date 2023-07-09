@@ -3039,6 +3039,11 @@ MonoBehaviour:
   popularity: 10
   rent: 200
   day: 0
+  neonSign: 0
+  sueMoney: 1000
+  suePop: 10
+  Canvas: {fileID: 1836449768}
+  sued: {fileID: 873544394743096745, guid: d2cbd889d7e9c7b419ba512ac29b8624, type: 3}
 --- !u!4 &1827985783
 Transform:
   m_ObjectHideFlags: 0

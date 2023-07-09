@@ -39,6 +39,9 @@ public class StatManager : MonoBehaviour
     private Text ren;
     private Text d;
 
+    public GameObject Canvas;
+    public GameObject sued;
+
     public void FindUI()
     {
         Texts = GameObject.FindObjectsOfType<Text>();
@@ -142,6 +145,8 @@ public class StatManager : MonoBehaviour
         money -= rent;
         if(Random.Range(1,100) <= risk) //Getting Sued
         {
+            (Instantiate(sued) as GameObject).transform.parent = Canvas.transform;
+
             money -= Random.Range(sueMoney, risk * sueMoney + 1);
             popularity -= Random.Range(suePop, risk * suePop + 1);
             pop.text = popularity.ToString();
