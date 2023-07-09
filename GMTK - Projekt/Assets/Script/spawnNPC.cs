@@ -10,7 +10,6 @@ public class spawnNPC : MonoBehaviour
 
     void Start()
     {
-        StatManager.Instance.UpdateValues();
         if (StatManager.Instance.popularity != 0)
         {
             SpawnNPC();
