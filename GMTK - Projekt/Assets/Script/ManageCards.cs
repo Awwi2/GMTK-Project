@@ -36,8 +36,9 @@ public class ManageCards : MonoBehaviour
 
     private Card[] cards;
 
-    private void Awake()
+    private void Start()
     {
+        StatManager.Instance.executeDay();
         cards = Resources.LoadAll<Card>("Cards");
         UpdateCards();
     }
@@ -89,6 +90,7 @@ public class ManageCards : MonoBehaviour
         StatManager.Instance.risk += card1.riskModifier;
         StatManager.Instance.moneyPerPerson += card1.moneyPerPersonModifier;
         StatManager.Instance.UpdateValues();
+        SwitchToDay();
     }
 
     public void CardTwo()
@@ -99,6 +101,7 @@ public class ManageCards : MonoBehaviour
         StatManager.Instance.risk += card2.riskModifier;
         StatManager.Instance.moneyPerPerson += card2.moneyPerPersonModifier;
         StatManager.Instance.UpdateValues();
+        SwitchToDay();
     }
 
     public void CardThree()
@@ -109,10 +112,11 @@ public class ManageCards : MonoBehaviour
         StatManager.Instance.risk += card3.riskModifier;
         StatManager.Instance.moneyPerPerson += card3.moneyPerPersonModifier;
         StatManager.Instance.UpdateValues();
+        SwitchToDay();
     }
 
-    public void Placeholde()
+    public void SwitchToDay()
     {
-        SceneManager.LoadScene("Poker Table");
+        SceneManager.LoadScene("World Scene");
     }
 }

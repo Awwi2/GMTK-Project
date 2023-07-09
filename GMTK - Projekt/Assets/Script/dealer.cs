@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class dealer : MonoBehaviour
 {
@@ -24,8 +25,7 @@ public class dealer : MonoBehaviour
     }
     public void setReady()
     {
-        //Here scene switch to Upgrade Select
-        Destroy(this.gameObject);
+        SceneManager.LoadScene("Poker Table");
     }
 
 }

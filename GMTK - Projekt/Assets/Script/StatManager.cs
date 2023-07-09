@@ -52,8 +52,6 @@ public class StatManager : MonoBehaviour
 
     private void Awake()
     {
-        
-
         if (Instance != null)
         {
             Destroy(gameObject);
@@ -66,6 +64,7 @@ public class StatManager : MonoBehaviour
 
     public void executeDay()
     {
+        FindUI();
         /*int i = 6;
         peopleToday = 0;
         while(Random.Range(1,i) <= popularity)

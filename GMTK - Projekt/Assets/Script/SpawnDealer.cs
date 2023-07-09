@@ -8,6 +8,11 @@ public class SpawnDealer : MonoBehaviour
     public DayNightCycle2D DayNightCycler;
     public GameObject dealer;
 
+    private void Start()
+    {
+        isSpawned = true;
+    }
+
     void Update()
     {
         if (!DayNightCycler.getDaytime() && isSpawned == false)
