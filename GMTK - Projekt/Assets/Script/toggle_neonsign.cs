@@ -7,7 +7,7 @@ public class toggle_neonsign : MonoBehaviour
     public DayNightCycle2D DayNightCycler;
     void Update()
     {
-        if (DayNightCycler.getDaytime())
+        if (DayNightCycler.isDay)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }

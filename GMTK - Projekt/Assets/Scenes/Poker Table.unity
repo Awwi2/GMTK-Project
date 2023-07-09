@@ -160,7 +160,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.06210836, g: 0.49056602, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.11764707, g: 0.56078434, b: 0.45098042, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -269,7 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6170c2ce14723418a54a303e3f47bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 1827985782}
   name1: {fileID: 105358332}
   description1: {fileID: 1053565560}
   effect1_1: {fileID: 1399873328}
@@ -1781,8 +1780,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 55, y: 83.7}
-  m_SizeDelta: {x: 48, y: 48}
+  m_AnchoredPosition: {x: 62.7, y: 91.7}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281455405
 MonoBehaviour:
@@ -2483,8 +2482,8 @@ MonoBehaviour:
   rent: 200
   mon: {fileID: 89986079}
   mPP: {fileID: 2034726923}
-  r: {fileID: 380312245}
   pop: {fileID: 1556071585}
+  r: {fileID: 380312245}
   ren: {fileID: 1792076763}
 --- !u!4 &1827985783
 Transform:

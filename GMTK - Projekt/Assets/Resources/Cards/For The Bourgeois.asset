@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
-  m_Name: For the Bourgeoisie
+  m_Name: For The Bourgeois
   m_EditorClassIdentifier: 
-  name: For the Bourgeoisie
+  name: For The Bourgeois
   description: No more poor people!
   effect1: + Money per Person
   effect2: '- Popularity'
