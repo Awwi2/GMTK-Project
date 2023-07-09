@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
-  m_Name: Neon-Sign
+  m_Name: Free Money
   m_EditorClassIdentifier: 
-  name: Neon-Sign
-  description: A glowing Sign by the road that attracts more customers.
-  effect1: + Popularity
-  effect2: + Rent
+  name: Free Money
+  description: Why are we doing this again?
+  effect1: '- Money'
+  effect2: + Popularity
   effect3: 
-  image: {fileID: -7415955986125602904, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: 0
-  popularityModifier: 5
-  rentModifier: 15
+  image: {fileID: 2364552672744995599, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
+  moneyModifier: -50
+  popularityModifier: 20
+  rentModifier: 0
   riskModifier: 0
   moneyPerPersonModifier: 0
   rarity: 0

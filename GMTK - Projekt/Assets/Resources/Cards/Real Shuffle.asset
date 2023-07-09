@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
-  m_Name: Neon-Sign
+  m_Name: Real Shuffle
   m_EditorClassIdentifier: 
-  name: Neon-Sign
-  description: A glowing Sign by the road that attracts more customers.
-  effect1: + Popularity
-  effect2: + Rent
+  name: Real Shuffle
+  description: No Tricks, no effects, just shuffling right here...
+  effect1: + Money per Person
+  effect2: + Risk
   effect3: 
-  image: {fileID: -7415955986125602904, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
+  image: {fileID: -1940207476627441729, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 5
-  rentModifier: 15
-  riskModifier: 0
-  moneyPerPersonModifier: 0
+  popularityModifier: 0
+  rentModifier: 0
+  riskModifier: 2
+  moneyPerPersonModifier: 5
   rarity: 0

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
-  m_Name: Neon-Sign
+  m_Name: Nice Guys
   m_EditorClassIdentifier: 
-  name: Neon-Sign
-  description: A glowing Sign by the road that attracts more customers.
-  effect1: + Popularity
-  effect2: + Rent
+  name: 'Nice Guys '
+  description: "How about we don\u2019t cheat?!"
+  effect1: '- Risk'
+  effect2: '- Money per Person'
   effect3: 
-  image: {fileID: -7415955986125602904, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
+  image: {fileID: 2975849240591541955, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 5
-  rentModifier: 15
-  riskModifier: 0
-  moneyPerPersonModifier: 0
+  popularityModifier: 0
+  rentModifier: 0
+  riskModifier: 10
+  moneyPerPersonModifier: 10
   rarity: 0

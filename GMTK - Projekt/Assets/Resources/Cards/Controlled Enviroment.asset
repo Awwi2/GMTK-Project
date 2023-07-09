@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e189bb0e3bce04aa37388b70b645c5, type: 3}
-  m_Name: Neon-Sign
+  m_Name: Controlled Enviroment
   m_EditorClassIdentifier: 
-  name: Neon-Sign
-  description: A glowing Sign by the road that attracts more customers.
-  effect1: + Popularity
-  effect2: + Rent
+  name: Controlled Enviroment
+  description: Back to the roots.
+  effect1: Money is set to 0
+  effect2: Risk is set to 0
   effect3: 
-  image: {fileID: -7415955986125602904, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
+  image: {fileID: 8963368785945452489, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
-  popularityModifier: 5
-  rentModifier: 15
+  popularityModifier: 0
+  rentModifier: 0
   riskModifier: 0
   moneyPerPersonModifier: 0
   rarity: 0
