@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Free Money
   description: Why are we doing this again?
-  effect1: '- Money'
-  effect2: + Popularity
+  effect1: + Popularity
+  effect2: '- Money'
   effect3: 
   image: {fileID: 2364552672744995599, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: -150
-  popularityModifier: 20
+  moneyModifier: -300
+  popularityModifier: 10
   rentModifier: 0
   riskModifier: 0
   moneyPerPersonModifier: 0
