@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Advanced Management
   description: Your hire seems to learn the ropes!
-  effect1: + Money per Person
-  effect2: '- Rent'
-  effect3: '- Risk'
+  effect1: '- Rent'
+  effect2: '- Risk'
+  effect3: + Money per Person
   image: {fileID: -3901309678650635185, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
-  rentModifier: -5
-  riskModifier: -2
-  moneyPerPersonModifier: 10
+  rentModifier: -10
+  riskModifier: -5
+  moneyPerPersonModifier: 5
   rarity: 0

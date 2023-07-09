@@ -21,6 +21,6 @@ MonoBehaviour:
   moneyModifier: 0
   popularityModifier: 0
   rentModifier: 0
-  riskModifier: 5
+  riskModifier: 10
   moneyPerPersonModifier: 10
   rarity: 0
