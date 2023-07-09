@@ -4,24 +4,18 @@ using UnityEngine;
 
 public class SpawnDealer : MonoBehaviour
 {
-    private bool isSpawned = true;
+    public bool isSpawned = true;
     public DayNightCycle2D DayNightCycler;
     public GameObject dealer;
 
     private void Awake()
     {
-        isSpawned = true;
+        Invoke("spawn", 14f);
     }
 
-    void Update()
+    void spawn()
     {
-        if (!DayNightCycler.isDay && isSpawned == false)
-        {
-            isSpawned = true;
+
             Instantiate(dealer);
-        } else if (DayNightCycler.isDay)
-        {
-            isSpawned = false;
-        }
     }
 }

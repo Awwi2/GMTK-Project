@@ -13,6 +13,7 @@ public class dealer : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(-speed, rb.velocity.y);
+        //GameObject.Find("dealer_idlepoint").gameObject.GetComponent<SpawnDealer>().isSpawned = true;
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
