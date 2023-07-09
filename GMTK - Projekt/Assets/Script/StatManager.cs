@@ -9,16 +9,24 @@ public class StatManager : MonoBehaviour
     public static StatManager Instance;
 
     public int money;
+    private int standartMoney;
     [Min(0)]
     public int moneyPerPerson = 50;
+    private int standartMoneyPerPerson;
     [Min(0)]
     public int peopleToday;
     [Min(0)]
     public int risk = 0;
+    private int standartRisk;
     [Min(0)]
     public int popularity = 10;
+    private int standartPopularity;
     [Min(0)]
     public int rent = 200;
+    private int standartRent;
+    [Min(0)]
+    public int day = 0;
+    private int standartDay;
 
     Text[] Texts;
     private Text mon;
@@ -26,6 +34,7 @@ public class StatManager : MonoBehaviour
     private Text pop;
     private Text r;
     private Text ren;
+    private Text d;
 
     public void FindUI()
     {
@@ -51,6 +60,10 @@ public class StatManager : MonoBehaviour
             else if (t.name == "Rent")
             {
                 ren = t;
+            }
+            else if (t.name == "Days")
+            {
+                d = t;
             }
         }
     }
@@ -79,6 +92,14 @@ public class StatManager : MonoBehaviour
 
     private void Awake()
     {
+
+        standartMoney = money;
+        standartMoneyPerPerson = moneyPerPerson;
+        standartRisk = risk;
+        standartPopularity = popularity;
+        standartRent = rent;
+        standartDay = day;
+
         UpdateValues();
 
         if (Instance != null)
@@ -102,6 +123,7 @@ public class StatManager : MonoBehaviour
             i += 5;
         }
         */
+        day += 1;
         peopleToday = popularity / 5;
         money += moneyPerPerson * peopleToday;
         money -= rent;
@@ -147,7 +169,17 @@ public class StatManager : MonoBehaviour
         pop.text = popularity.ToString();
         r.text = risk.ToString();
         ren.text = rent.ToString();
+        d.text = day.ToString();
 
 
+    }
+    public void ResetValues()
+    {
+        money = standartMoney;
+        moneyPerPerson = standartMoneyPerPerson;
+        risk = standartRisk;
+        popularity = standartPopularity;
+        rent = standartRent;
+        day = standartDay;
     }
 }
