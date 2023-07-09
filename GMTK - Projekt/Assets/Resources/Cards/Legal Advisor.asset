@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Legal Advisor
   description: Seems useful...
-  effect1: + Loose less Money when sued
+  effect1: '- Fine When Sued'
   effect2: 
   effect3: 
   image: {fileID: -5167807243808128219, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
