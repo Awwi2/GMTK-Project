@@ -112,10 +112,6 @@ public class StatManager : MonoBehaviour
             pop.text = popularity.ToString();
         }
         mon.text = money.ToString();
-        if ( money <= 0)
-        {
-            //implement Game Over Screen here
-        }
     }
 
     public void tempMPPPlus()
