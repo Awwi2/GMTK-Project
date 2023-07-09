@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Controlled Enviroment
   description: Back to the roots.
-  effect1: Money is set to 0
+  effect1: Money is set to 500
   effect2: Risk is set to 0
   effect3: 
   image: {fileID: 8963368785945452489, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
