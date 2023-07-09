@@ -114,8 +114,4 @@ public class DayNightCycle2D : MonoBehaviour
 
         }
     }
-    public bool getDaytime()
-    {
-        return isDay;
-    }
 }
