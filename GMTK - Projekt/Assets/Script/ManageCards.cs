@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ManageCards : MonoBehaviour
 {
-    public StatManager stats;
-
     public Text name1;
     public Text description1;
     public Text effect1_1;
@@ -83,32 +82,37 @@ public class ManageCards : MonoBehaviour
 
     public void CardOne()
     {
-        Debug.Log("test");
-        stats.money += card1.moneyModifier;
-        stats.popularity += card1.popularityModifier;
-        stats.rent += card1.rentModifier;
-        stats.risk += card1.riskModifier;
-        stats.moneyPerPerson += card1.moneyPerPersonModifier;
-        stats.UpdateValues();
+        Debug.Log(StatManager.Instance.money);
+        StatManager.Instance.money += card1.moneyModifier;
+        StatManager.Instance.popularity += card1.popularityModifier;
+        StatManager.Instance.rent += card1.rentModifier;
+        StatManager.Instance.risk += card1.riskModifier;
+        StatManager.Instance.moneyPerPerson += card1.moneyPerPersonModifier;
+        StatManager.Instance.UpdateValues();
     }
 
     public void CardTwo()
     {
-        stats.money += card2.moneyModifier;
-        stats.popularity += card2.popularityModifier;
-        stats.rent += card2.rentModifier;
-        stats.risk += card2.riskModifier;
-        stats.moneyPerPerson += card2.moneyPerPersonModifier;
-        stats.UpdateValues();
+        StatManager.Instance.money += card2.moneyModifier;
+        StatManager.Instance.popularity += card2.popularityModifier;
+        StatManager.Instance.rent += card2.rentModifier;
+        StatManager.Instance.risk += card2.riskModifier;
+        StatManager.Instance.moneyPerPerson += card2.moneyPerPersonModifier;
+        StatManager.Instance.UpdateValues();
     }
 
     public void CardThree()
     {
-        stats.money += card3.moneyModifier;
-        stats.popularity += card3.popularityModifier;
-        stats.rent += card3.rentModifier;
-        stats.risk += card3.riskModifier;
-        stats.moneyPerPerson += card3.moneyPerPersonModifier;
-        stats.UpdateValues();
+        StatManager.Instance.money += card3.moneyModifier;
+        StatManager.Instance.popularity += card3.popularityModifier;
+        StatManager.Instance.rent += card3.rentModifier;
+        StatManager.Instance.risk += card3.riskModifier;
+        StatManager.Instance.moneyPerPerson += card3.moneyPerPersonModifier;
+        StatManager.Instance.UpdateValues();
+    }
+
+    public void Placeholde()
+    {
+        SceneManager.LoadScene("Poker Table");
     }
 }
