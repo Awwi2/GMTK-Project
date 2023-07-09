@@ -16,4 +16,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("World Scene");
 
     }
+
+    public void SFX()
+    {
+
+    }
+
+    public void Music()
+    {
+
+    }
 }
