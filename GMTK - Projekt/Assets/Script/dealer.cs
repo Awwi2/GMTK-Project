@@ -19,7 +19,7 @@ public class dealer : MonoBehaviour
         {
             speed = 0f;
             animator.SetTrigger("goIdle");
-            Invoke("setReady", 1.5f);
+            Invoke("setReady", 1.555f);
         }
     }
     public void setReady()
