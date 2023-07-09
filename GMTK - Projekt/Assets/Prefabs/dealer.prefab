@@ -167,4 +167,3 @@ MonoBehaviour:
   speed: 1
   rb: {fileID: 4429441362137665642}
   animator: {fileID: 4429441362137665640}
-  isReady: 0

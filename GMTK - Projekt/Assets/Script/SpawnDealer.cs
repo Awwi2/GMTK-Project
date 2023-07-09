@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnDealer : MonoBehaviour
 {
-    private bool isSpawned;
+    private bool isSpawned = true;
     public DayNightCycle2D DayNightCycler;
     public GameObject dealer;
 
