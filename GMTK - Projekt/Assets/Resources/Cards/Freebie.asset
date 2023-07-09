@@ -17,7 +17,7 @@ MonoBehaviour:
   effect1: 
   effect2: 
   effect3: 
-  image: {fileID: 2975849240591541955, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
+  image: {fileID: -7182693308199855722, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
   rentModifier: 0

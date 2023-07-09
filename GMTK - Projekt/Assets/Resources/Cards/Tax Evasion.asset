@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 'Tax Evasion '
   description: A risk free way of keeping money.
-  effect1: + Risk
-  effect2: '- Rent'
+  effect1: '- Rent'
+  effect2: + Risk
   effect3: 
   image: {fileID: 8948946568479395471, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
-  rentModifier: -10
-  riskModifier: 10
+  rentModifier: -100
+  riskModifier: 15
   moneyPerPersonModifier: 0
   rarity: 0

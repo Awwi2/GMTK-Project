@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sorted Deck
   description: A sorted Deck is a good Deck.
-  effect1: + Risk
-  effect2: + Money per Person
+  effect1: + Money per Person
+  effect2: '+ Risk '
   effect3: 
   image: {fileID: 4758714507323444636, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
