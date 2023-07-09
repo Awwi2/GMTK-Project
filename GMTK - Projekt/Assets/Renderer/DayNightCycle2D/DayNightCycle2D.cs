@@ -59,7 +59,6 @@ public class DayNightCycle2D : MonoBehaviour
             }
 
         }
-        Debug.Log("isDay: " + isDay);
 
         //Day & Night GlobalLight
 
