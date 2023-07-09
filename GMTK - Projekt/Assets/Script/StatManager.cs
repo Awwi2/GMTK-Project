@@ -54,6 +54,28 @@ public class StatManager : MonoBehaviour
             }
         }
     }
+    private void Update()
+    {
+        if (moneyPerPerson < 0)
+        {
+            moneyPerPerson = 0;
+        } else if (peopleToday < 0)
+        {
+            peopleToday = 0;
+        }
+        else if (risk < 0)
+        {
+            risk = 0;
+        }
+        else if (popularity < 0)
+        {
+            popularity = 0;
+        }
+        else if (rent < 0)
+        {
+            rent = 0;
+        }
+    }
 
     private void Awake()
     {
