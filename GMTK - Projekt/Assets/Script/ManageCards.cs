@@ -30,6 +30,10 @@ public class ManageCards : MonoBehaviour
     public Image image1_3;
     public Image image2_3;
 
+    public Button anim1;
+    public Button anim2;
+    public Button anim3;
+
     private Card card1;
     private Card card2;
     private Card card3;
@@ -83,39 +87,44 @@ public class ManageCards : MonoBehaviour
 
     public void CardOne()
     {
+        anim1.interactable = false;
+        anim2.interactable = false;
+        anim3.interactable = false;
         StatManager.Instance.money += card1.moneyModifier;
         StatManager.Instance.popularity += card1.popularityModifier;
         StatManager.Instance.rent += card1.rentModifier;
         StatManager.Instance.risk += card1.riskModifier;
         StatManager.Instance.moneyPerPerson += card1.moneyPerPersonModifier;
         StatManager.Instance.UpdateValues();
-        SwitchToDay();
+        StartCoroutine(anim1.GetComponent<Card1>().SelectThis());
+
     }
 
     public void CardTwo()
     {
+        anim1.interactable = false;
+        anim2.interactable = false;
+        anim3.interactable = false;
         StatManager.Instance.money += card2.moneyModifier;
         StatManager.Instance.popularity += card2.popularityModifier;
         StatManager.Instance.rent += card2.rentModifier;
         StatManager.Instance.risk += card2.riskModifier;
         StatManager.Instance.moneyPerPerson += card2.moneyPerPersonModifier;
         StatManager.Instance.UpdateValues();
-        SwitchToDay();
+        StartCoroutine(anim2.GetComponent<Card2>().SelectThis());
     }
 
     public void CardThree()
     {
+        anim1.interactable = false;
+        anim2.interactable = false;
+        anim3.interactable = false;
         StatManager.Instance.money += card3.moneyModifier;
         StatManager.Instance.popularity += card3.popularityModifier;
         StatManager.Instance.rent += card3.rentModifier;
         StatManager.Instance.risk += card3.riskModifier;
         StatManager.Instance.moneyPerPerson += card3.moneyPerPersonModifier;
         StatManager.Instance.UpdateValues();
-        SwitchToDay();
-    }
-
-    public void SwitchToDay()
-    {
-        SceneManager.LoadScene("World Scene");
+        StartCoroutine(anim3.GetComponent<Card3>().SelectThis());
     }
 }

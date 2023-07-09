@@ -112,6 +112,12 @@ public class StatManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void addMoney()
+    {
+        money += moneyPerPerson;
+        UpdateValues();
+    }
+
     public void executeDay()
     {
         FindUI();
@@ -124,8 +130,6 @@ public class StatManager : MonoBehaviour
         }
         */
         day += 1;
-        peopleToday = popularity / 5;
-        money += moneyPerPerson * peopleToday;
         money -= rent;
         if(Random.Range(1,100) <= risk) //Getting Sued
         {

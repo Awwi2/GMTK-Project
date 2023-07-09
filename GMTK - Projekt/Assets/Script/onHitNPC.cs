@@ -10,6 +10,7 @@ public class onHitNPC : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            StatManager.Instance.addMoney();
             coin.Play(0);
             particle.Play();
         }
