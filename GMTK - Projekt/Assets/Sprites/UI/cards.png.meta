@@ -77,6 +77,12 @@ TextureImporter:
   - first:
       213: 6063370347128411930
     second: card_empty_back
+  - first:
+      213: 7028969208027117126
+    second: card_symbol_slot
+  - first:
+      213: -7182693308199855722
+    second: card_symbol_nothing
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -690,7 +696,7 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,6 +704,48 @@ TextureImporter:
       bones: []
       spriteID: a17d932a43b652450800000000000000
       internalID: 6063370347128411930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card_symbol_slot
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6467d9de04aeb8160800000000000000
+      internalID: 7028969208027117126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card_symbol_nothing
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6991c22ed72f15c90800000000000000
+      internalID: -7182693308199855722
       vertices: []
       indices: 
       edges: []
