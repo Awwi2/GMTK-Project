@@ -10,7 +10,7 @@ public class spawnNPC : MonoBehaviour
 
     void Start()
     {
-        spawnNPC();
+        SpawnNPC();
     }
     void reRun()
     {
