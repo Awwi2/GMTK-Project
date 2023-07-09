@@ -10,12 +10,12 @@ public class spawnNPC : MonoBehaviour
 
     void Start()
     {
-        reRun();
+        spawnNPC();
     }
     void reRun()
     {
         Spawnrate = StatManager.Instance.popularity/5;
-        Invoke("SpawnNPC", (20f / Spawnrate) - 1.5f);
+        Invoke("SpawnNPC", (20f / Spawnrate) - Random.Range(0f,1.5f));
 
     }
 
