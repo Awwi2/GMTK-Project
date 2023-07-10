@@ -17,13 +17,9 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void SFX()
+    public void Quitgame()
     {
-
-    }
-
-    public void Music()
-    {
-
+        Debug.Log("Quit");
+        Application.Quit();
     }
 }
