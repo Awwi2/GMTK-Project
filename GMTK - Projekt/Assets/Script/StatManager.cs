@@ -151,6 +151,12 @@ public class StatManager : MonoBehaviour
             sue.color = new Color(1,0,0);
             money -= Random.Range(sueMoney, risk * sueMoney + 1);
             popularity -= Random.Range(suePop, risk * suePop + 1);
+
+
+            if (popularity < 0)
+            {
+                popularity = 0;
+            }
         }
         else
         {
