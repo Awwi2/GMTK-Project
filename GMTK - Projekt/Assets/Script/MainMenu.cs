@@ -11,9 +11,19 @@ public class MainMenu : MonoBehaviour
 
         Invoke("loadWorld", 0.2f);
     }
+    public void Tutorial()
+    {
+
+        Invoke("loadTutorial", 0.2f);
+    }
     private void loadWorld()
     {
         SceneManager.LoadScene("World Scene");
+
+    }
+    private void loadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
 
     }
 
