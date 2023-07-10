@@ -149,7 +149,8 @@ public class StatManager : MonoBehaviour
             pop.text = popularity.ToString();
             sue.GetComponent<Animator>().Play("YouGotSued");
         }
-        mon.text = money.ToString();
+        UpdateValues();
+
     }
 
     public void tempMPPPlus()
