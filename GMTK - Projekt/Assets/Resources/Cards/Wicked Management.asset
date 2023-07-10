@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Wicked Management
   description: 'Turn employees into Money! '
-  effect1: + 3k Money
+  effect1: + 2k Money
   effect2: '- Popularity'
   effect3: 
   image: {fileID: -3171552581871247763, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: 3000
+  moneyModifier: 2000
   popularityModifier: -10
   rentModifier: -50
   riskModifier: 10
