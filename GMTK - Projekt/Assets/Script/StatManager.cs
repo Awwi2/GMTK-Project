@@ -38,6 +38,7 @@ public class StatManager : MonoBehaviour
     private Text r;
     private Text ren;
     private Text d;
+    private GameObject sue;
 
     public void FindUI()
     {
@@ -132,6 +133,7 @@ public class StatManager : MonoBehaviour
             i += 5;
         }
         */
+        sue = GameObject.Find("Sued");
         day += 1;
         if(day % 5 == 0)
         {
@@ -145,6 +147,7 @@ public class StatManager : MonoBehaviour
             money -= Random.Range(sueMoney, risk * sueMoney + 1);
             popularity -= Random.Range(suePop, risk * suePop + 1);
             pop.text = popularity.ToString();
+            sue.GetComponent<Animator>().Play("YouGotSued");
         }
         mon.text = money.ToString();
     }
