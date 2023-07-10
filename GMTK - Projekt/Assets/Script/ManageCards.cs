@@ -38,28 +38,24 @@ public class ManageCards : MonoBehaviour
     private Card card2;
     private Card card3;
 
-    private Card[] cards;
+    private List<Card> cards;
 
     private void Start()
     {
         StatManager.Instance.executeDay();
-        cards = Resources.LoadAll<Card>("Cards");
+        cards = new List<Card>(Resources.LoadAll<Card>("Cards"));
         UpdateCards();
     }
 
     public void UpdateCards()
     {
-        card1 = cards[Random.Range(0, cards.Length)];
-        card2 = cards[Random.Range(0, cards.Length)];
-        card3 = cards[Random.Range(0, cards.Length)];
-        while (card1 == card2)
-        {
-            card2 = cards[Random.Range(0, cards.Length)];
-        }
-        while (card1 == card3 || card2 == card3)
-        {
-            card2 = cards[Random.Range(0, cards.Length)];
-        }
+        card1 = cards[Random.Range(0, cards.Count)];
+        cards.Remove(card1);
+        card2 = cards[Random.Range(0, cards.Count)];
+        cards.Remove(card2);
+        card3 = cards[Random.Range(0, cards.Count)];
+        cards.Add(card1);
+        cards.Add(card2);
 
         name1.text = card1.name;
         if(card1.name == "Neon-Sign" && StatManager.Instance.neonSign)
@@ -77,7 +73,7 @@ public class ManageCards : MonoBehaviour
         image2_1.sprite = card1.image;
 
         name2.text = card2.name;
-        if (card1.name == "Neon-Sign" && StatManager.Instance.neonSign)
+        if (card2.name == "Neon-Sign" && StatManager.Instance.neonSign)
         {
             description2.text = "I Mean we already have that, but what about a Billboard?";
         }
@@ -92,7 +88,7 @@ public class ManageCards : MonoBehaviour
         image2_2.sprite = card2.image;
 
         name3.text = card3.name;
-        if (card1.name == "Neon-Sign" && StatManager.Instance.neonSign)
+        if (card3.name == "Neon-Sign" && StatManager.Instance.neonSign)
         {
             description3.text = "I Mean we already have that, but what about a Billboard?";
         }

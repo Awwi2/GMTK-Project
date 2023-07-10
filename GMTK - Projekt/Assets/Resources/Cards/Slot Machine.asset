@@ -15,12 +15,12 @@ MonoBehaviour:
   name: Slot machine
   description: Why didnt we get this to begin with?
   effect1: + Money Per Person
-  effect2: +Rent
-  effect3: '- Money'
+  effect2: + Rent
+  effect3: '- 750 Money'
   image: {fileID: 7028969208027117126, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: -100
+  moneyModifier: -750
   popularityModifier: 0
-  rentModifier: 50
+  rentModifier: 75
   riskModifier: 0
-  moneyPerPersonModifier: 20
+  moneyPerPersonModifier: 15
   rarity: 0

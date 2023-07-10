@@ -38,6 +38,7 @@ public class StatManager : MonoBehaviour
     private Text r;
     private Text ren;
     private Text d;
+    private Text sue;
 
     public void FindUI()
     {
@@ -67,6 +68,10 @@ public class StatManager : MonoBehaviour
             else if (t.name == "Days")
             {
                 d = t;
+            }
+            else if (t.name == "Sued")
+            {
+                sue = t;
             }
         }
     }
@@ -142,11 +147,25 @@ public class StatManager : MonoBehaviour
         money -= rent;
         if(Random.Range(1,100) <= risk) //Getting Sued
         {
+            sue.text = "YOU GOT SUED";
+            sue.color = new Color(1,0,0);
             money -= Random.Range(sueMoney, risk * sueMoney + 1);
             popularity -= Random.Range(suePop, risk * suePop + 1);
-            pop.text = popularity.ToString();
+
+
+            if (popularity < 0)
+            {
+                popularity = 0;
+            }
         }
-        mon.text = money.ToString();
+        else
+        {
+            sue.text = "- " + rent + " Money For Rent";
+            sue.color = new Color(1, 1, 1);
+        }
+        sue.GetComponent<Animator>().Play("YouGotSued");
+        UpdateValues();
+
     }
 
     public void tempMPPPlus()
