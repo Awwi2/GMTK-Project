@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Hire em all
   description: Turn Money into employees!
   effect1: + Popularity
-  effect2: '- Money'
+  effect2: '- 500 Money'
   effect3: 
   image: {fileID: 3937048335420172050, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: -500

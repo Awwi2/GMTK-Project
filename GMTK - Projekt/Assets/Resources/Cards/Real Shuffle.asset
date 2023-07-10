@@ -15,12 +15,12 @@ MonoBehaviour:
   name: Real Shuffle
   description: No Tricks, no effects, just shuffling right here...
   effect1: + Popularity
-  effect2: + Risk
-  effect3: 
+  effect2: + Money Per Person
+  effect3: + Risk
   image: {fileID: -1940207476627441729, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 10
   rentModifier: 0
-  riskModifier: 2
+  riskModifier: 3
   moneyPerPersonModifier: 5
   rarity: 0
