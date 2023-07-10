@@ -146,7 +146,6 @@ public class StatManager : MonoBehaviour
         {
             money -= Random.Range(sueMoney, risk * sueMoney + 1);
             popularity -= Random.Range(suePop, risk * suePop + 1);
-            pop.text = popularity.ToString();
             sue.GetComponent<Animator>().Play("YouGotSued");
         }
         UpdateValues();
