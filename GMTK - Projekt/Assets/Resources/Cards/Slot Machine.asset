@@ -18,9 +18,9 @@ MonoBehaviour:
   effect2: +Rent
   effect3: '- Money'
   image: {fileID: 7028969208027117126, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: -100
+  moneyModifier: -750
   popularityModifier: 0
-  rentModifier: 50
+  rentModifier: 75
   riskModifier: 0
   moneyPerPersonModifier: 20
   rarity: 0

@@ -18,9 +18,9 @@ MonoBehaviour:
   effect2: '- Money'
   effect3: 
   image: {fileID: 3937048335420172050, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: -50
+  moneyModifier: -500
   popularityModifier: 10
   rentModifier: 0
-  riskModifier: -5
+  riskModifier: -2
   moneyPerPersonModifier: 0
   rarity: 0

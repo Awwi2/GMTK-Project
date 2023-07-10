@@ -20,7 +20,7 @@ MonoBehaviour:
   image: {fileID: -2922113337684369405, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
-  rentModifier: 100
+  rentModifier: 200
   riskModifier: 0
   moneyPerPersonModifier: 25
   rarity: 0

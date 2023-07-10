@@ -15,12 +15,12 @@ MonoBehaviour:
   name: Legal Advisor
   description: Seems useful...
   effect1: '- Fine When Sued'
-  effect2: + Rent
+  effect2: '- Rent'
   effect3: 
   image: {fileID: -5167807243808128219, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 0
   rentModifier: 50
-  riskModifier: -2
+  riskModifier: -3
   moneyPerPersonModifier: 0
   rarity: 0
