@@ -16,21 +16,46 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUi;
 
+    public void Awake()
+    {
+        pauseMenuUi.SetActive(true);
+        SetMasterVolumeFromSlider();
+        SetMusicVolumeFromSlider();
+        SetSfxVolumeFromSlider();
+        pauseMenuUi.SetActive(false);
 
+    }
 
     public void SetMasterVolumeFromSlider()
     {
-        masterVolume.SetFloat("MasterVolume", soundSlider.value*100-80);
-        
+        float value = 0 - (1 - soundSlider.value) * 40;      
+        //Mute the audio if the slider is all the way to the left
+        if (value == -40)
+        {
+            value = -80;
+        }
+        masterVolume.SetFloat("MasterVolume", value);
     }
     public void SetMusicVolumeFromSlider()
     {
-        masterVolume.SetFloat("MusicVolume", MusicSlider.value * 100 - 80);
+        float value = 0 - (1 - MusicSlider.value) * 40;
+        //Mute the audio if the slider is all the way to the left
+        if (value == -40)
+        {
+            value = -80;
+        }
+        masterVolume.SetFloat("MusicVolume", value);
 
     }
     public void SetSfxVolumeFromSlider()
     {
-        masterVolume.SetFloat("SFXVolume", SFXSlider.value * 100 - 80);
+        float value = 0 - (1 - SFXSlider.value) * 40;
+        //Mute the audio if the slider is all the way to the left
+        if (value == -40)
+        {
+            value = -80;
+        }
+        masterVolume.SetFloat("SFXVolume", value);
 
     }
     void Update()
