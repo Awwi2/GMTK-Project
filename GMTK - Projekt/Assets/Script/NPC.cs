@@ -6,12 +6,17 @@ public class NPC : MonoBehaviour
 {
     public float speed = 2f;
     public Rigidbody2D rb;
+    GameObject[] npcs;
 
     void Update()
     {
         rb.velocity = new Vector2(speed, rb.velocity.y);
-        Physics2D.IgnoreCollision(GameObject.FindWithTag("Player").GetComponent<Collider2D>(), this.gameObject.GetComponent<Collider2D>());
 
+        npcs = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject obj in npcs)
+        {
+            Physics2D.IgnoreCollision(obj.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
+        }
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
