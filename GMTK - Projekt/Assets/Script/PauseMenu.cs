@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
         MasterSlider.value = (masterVol / 40) + 1;
         MusicSlider.value = (musicVol / 40) + 1;
         SFXSlider.value = (SFXVol / 40) + 1;
+        SetMasterVolumeFromSlider();
         Debug.Log("Loaded Master Volume from PlayerPrefs:" + masterVol);
 
     }
