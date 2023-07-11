@@ -15,12 +15,12 @@ MonoBehaviour:
   name: Well Managed?
   description: Your Manager has recently performed pretty well
   effect1: + Popularity
-  effect2: '- Risk'
-  effect3: 
+  effect2: '- Rent'
+  effect3: '- Risk'
   image: {fileID: -3901309678650635185, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: 0
   popularityModifier: 5
-  rentModifier: 0
+  rentModifier: -75
   riskModifier: -2
   moneyPerPersonModifier: 0
   rarity: 0
