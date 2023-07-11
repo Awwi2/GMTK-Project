@@ -25,12 +25,12 @@ public class PauseMenu : MonoBehaviour
         masterVolume.SetFloat("MasterVolume", masterVol);
         masterVolume.SetFloat("MusicVolume", musicVol);
         masterVolume.SetFloat("SFXVolume", SFXVol);
-        soundSlider.value = (masterVol/40) + 1;
-        MusicSlider.value = (musicVol/40) +1;
-        SFXSlider.value = (SFXVol/40) + 1;
+        MasterSlider.value = (masterVol / 40) + 1;
+        MusicSlider.value = (musicVol / 40) + 1;
+        SFXSlider.value = (SFXVol / 40) + 1;
         Debug.Log("Loaded Master Volume from PlayerPrefs:" + masterVol);
 
-
+    }
     public void GetAudioMixerVolume()
     {
         //Set the slider to the Value of the Master Mixer 
