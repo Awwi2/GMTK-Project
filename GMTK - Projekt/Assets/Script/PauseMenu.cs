@@ -36,16 +36,15 @@ public class PauseMenu : MonoBehaviour
         //Set the slider to the Value of the Master Mixer 
         float masterValue;
         bool masterMixer = masterVolume.GetFloat("MasterVolume", out masterValue); ;
-        MasterSlider.value = masterValue;
-        Debug.Log(masterValue);
+        MasterSlider.value = (masterValue / 40) + 1;
 
         float sfxValue;
         bool sfxMixer = masterVolume.GetFloat("SFXVolume", out sfxValue); ;
-        SFXSlider.value = sfxValue;
+        SFXSlider.value = (sfxValue / 40) + 1;
 
         float musicValue;
         bool musicMixer = masterVolume.GetFloat("SFXVolume", out musicValue); ;
-        MusicSlider.value = musicValue;
+        MusicSlider.value = (musicValue / 40) + 1;
 
     }
     public void SetMasterVolumeFromSlider()
