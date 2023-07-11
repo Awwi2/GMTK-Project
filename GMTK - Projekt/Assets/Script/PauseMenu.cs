@@ -19,7 +19,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Awake()
     {
-<<<<<<< HEAD
         float masterVol = PlayerPrefs.GetFloat("MasterVolume");
         float musicVol = PlayerPrefs.GetFloat("MusicVolume");
         float SFXVol = PlayerPrefs.GetFloat("SFXVolume");
@@ -31,13 +30,6 @@ public class PauseMenu : MonoBehaviour
         SFXSlider.value = (SFXVol/40) + 1;
         Debug.Log("Loaded Master Volume from PlayerPrefs:" + masterVol);
 
-
-=======
-        pauseMenuUi.SetActive(true);
-        GetAudioMixerVolume();
-        pauseMenuUi.SetActive(false);
->>>>>>> 903bb0f9e6215672118dd0039b134d3beb3e578c
-    }
 
     public void GetAudioMixerVolume()
     {

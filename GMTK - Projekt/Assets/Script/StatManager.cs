@@ -145,7 +145,7 @@ public class StatManager : MonoBehaviour
             suePop += 10;
         }
         money -= rent;
-        if(Random.Range(1,100) <= risk) //Getting Sued
+        if(Random.Range(1,100) <= risk && day > 3) //Getting Sued
         {
             sue.text = "YOU GOT SUED";
             sue.color = new Color(1,0,0);
