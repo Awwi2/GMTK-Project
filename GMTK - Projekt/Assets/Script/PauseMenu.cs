@@ -6,11 +6,12 @@ using UnityEditor.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    
-    [SerializeField] UnityEngine.UI.Slider soundSlider;
+
     [SerializeField] AudioMixer masterVolume;
+    [SerializeField] UnityEngine.UI.Slider MasterSlider;
     [SerializeField] UnityEngine.UI.Slider SFXSlider;
     [SerializeField] UnityEngine.UI.Slider MusicSlider;
+
 
     public static bool paused = false;
 
@@ -19,16 +20,30 @@ public class PauseMenu : MonoBehaviour
     public void Awake()
     {
         pauseMenuUi.SetActive(true);
-        SetMasterVolumeFromSlider();
-        SetMusicVolumeFromSlider();
-        SetSfxVolumeFromSlider();
+        GetAudioMixerVolume();
         pauseMenuUi.SetActive(false);
-
     }
 
+    public void GetAudioMixerVolume()
+    {
+        //Set the slider to the Value of the Master Mixer 
+        float masterValue;
+        bool masterMixer = masterVolume.GetFloat("MasterVolume", out masterValue); ;
+        MasterSlider.value = masterValue;
+        Debug.Log(masterValue);
+
+        float sfxValue;
+        bool sfxMixer = masterVolume.GetFloat("SFXVolume", out sfxValue); ;
+        SFXSlider.value = sfxValue;
+
+        float musicValue;
+        bool musicMixer = masterVolume.GetFloat("SFXVolume", out musicValue); ;
+        MusicSlider.value = musicValue;
+
+    }
     public void SetMasterVolumeFromSlider()
     {
-        float value = 0 - (1 - soundSlider.value) * 40;      
+        float value = 0 - (1 - MasterSlider.value) * 40;      
         //Mute the audio if the slider is all the way to the left
         if (value == -40)
         {
