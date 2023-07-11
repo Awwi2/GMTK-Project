@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
     }
     private void loadTutorial()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Tutorial World Scene");
 
     }
 
