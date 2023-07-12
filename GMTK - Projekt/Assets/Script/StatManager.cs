@@ -29,7 +29,7 @@ public class StatManager : MonoBehaviour
     private int standartDay;
 
     public bool neonSign;
-    public int sueMoney = 1000;
+    public int sueMoney = 750;
     public int suePop = 10;
 
     Text[] Texts;
@@ -142,7 +142,7 @@ public class StatManager : MonoBehaviour
         if(day % 5 == 0)
         {
             rent += 150;
-            sueMoney += 250;
+            sueMoney += 200;
             suePop += 7;
         }
         money -= rent;
