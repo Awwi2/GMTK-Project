@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
+    public PauseMenu PauseMenu;
+
     public Text money;
     public Text moneyPerPerson;
     public Text popularity;
@@ -19,6 +21,7 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        PauseMenu.GetAudioMixerVolume();
     }
 
     void Update()
