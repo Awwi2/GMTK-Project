@@ -78,7 +78,6 @@ public class DayNightCycle2D : MonoBehaviour
         if (collision.gameObject.CompareTag("SunLight"))
         {
             isDay = !isDay;
-            Debug.Log("isDay: " + isDay);
 
         }
     }
