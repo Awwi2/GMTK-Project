@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Free Samples
   description: If it works with cookies, it works with money!
-  effect1: '- 250 Money'
+  effect1: '- 150 Money'
   effect2: + Popularity
   effect3: 
   image: {fileID: -657809462729225012, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
