@@ -27,8 +27,9 @@ public class StatManager : MonoBehaviour
     [Min(0)]
     public int day = 0;
     private int standartDay;
+
     public bool neonSign;
-    public int sueMoney = 1000;
+    public int sueMoney = 750;
     public int suePop = 10;
 
     Text[] Texts;
@@ -140,9 +141,9 @@ public class StatManager : MonoBehaviour
         day += 1;
         if(day % 5 == 0)
         {
-            rent += 50;
-            sueMoney += 200;
-            suePop += 10;
+            rent += 150;
+            sueMoney += 125;
+            suePop += 7;
         }
         money -= rent;
         if(Random.Range(1,100) <= risk && day > 3) //Getting Sued
@@ -213,5 +214,15 @@ public class StatManager : MonoBehaviour
         popularity = standartPopularity;
         rent = standartRent;
         day = standartDay;
+    }
+    public void ResetHighscore()
+    {
+        PlayerPrefs.SetInt("Highscore", 0);
+    }
+    public void ResetVolume()
+    {
+        PlayerPrefs.SetFloat("MasterVolume", -6f);
+        PlayerPrefs.SetFloat("MusicVolume", -6f);
+        PlayerPrefs.SetFloat("SFXVolume", -6f);
     }
 }

@@ -13,6 +13,7 @@ public class gameOver : MonoBehaviour
         {
             Time.timeScale = 0f;
             GameOverScreen.SetActive(true);
+            ScoreManager.Instance.UpdateScore();
         }
     }
     public void TryAgain()

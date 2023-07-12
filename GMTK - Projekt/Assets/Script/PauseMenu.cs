@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEditor.UI;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
 
     [SerializeField] AudioMixer masterVolume;
-    [SerializeField] UnityEngine.UI.Slider MasterSlider;
-    [SerializeField] UnityEngine.UI.Slider SFXSlider;
-    [SerializeField] UnityEngine.UI.Slider MusicSlider;
+    [SerializeField] Slider MasterSlider;
+    [SerializeField] Slider SFXSlider;
+    [SerializeField] Slider MusicSlider;
 
 
     public static bool paused = false;
@@ -86,7 +87,7 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Tutorial World Scene" && SceneManager.GetActiveScene().name != "Tutorial Poker Table" && SceneManager.GetActiveScene().name != "Menu")
             {
                 if (paused)
                 {
@@ -99,16 +100,27 @@ public class PauseMenu : MonoBehaviour
             }
         }
     
-    void Resume()
+    public void Resume()
     {
         pauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         paused = false; 
     }
-    void Pause()
+    public void Pause()
     {
         pauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         paused = true;
+    }
+    public void Menu()
+    {
+        pauseMenuUi.SetActive(false);
+        Time.timeScale = 1f;
+        paused = false;
+        Invoke("loadMenu",0.15f);
+    }
+    private void loadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
