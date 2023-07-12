@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEditor.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -87,7 +88,7 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Tutorial World Scene" && SceneManager.GetActiveScene().name != "Tutorial Poker Table" && SceneManager.GetActiveScene().name != "Menu")
             {
                 if (paused)
                 {

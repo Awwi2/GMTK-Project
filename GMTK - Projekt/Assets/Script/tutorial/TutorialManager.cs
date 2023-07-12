@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
-    public PauseMenu PauseMenu;
 
     public Text money;
     public Text moneyPerPerson;
@@ -21,13 +20,13 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
-        PauseMenu.GetAudioMixerVolume();
     }
 
     void Update()
     {
         if (Input.GetKeyDown("escape"))
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene("Menu");
         }
 
@@ -156,6 +155,7 @@ public class TutorialManager : MonoBehaviour
         }
         else if (current == 41)
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene("Tutorial Poker Table");
         }
 
