@@ -141,9 +141,9 @@ public class StatManager : MonoBehaviour
         day += 1;
         if(day % 5 == 0)
         {
-            rent += 75;
-            sueMoney += 300;
-            suePop += 5;
+            rent += 150;
+            sueMoney += 250;
+            suePop += 7;
         }
         money -= rent;
         if(Random.Range(1,100) <= risk && day > 3) //Getting Sued
