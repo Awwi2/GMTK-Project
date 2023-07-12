@@ -215,4 +215,14 @@ public class StatManager : MonoBehaviour
         rent = standartRent;
         day = standartDay;
     }
+    public void ResetHighscore()
+    {
+        PlayerPrefs.SetInt("Highscore", 0);
+    }
+    public void ResetVolume()
+    {
+        PlayerPrefs.SetFloat("MasterVolume", -6f);
+        PlayerPrefs.SetFloat("MusicVolume", -6f);
+        PlayerPrefs.SetFloat("SFXVolume", -6f);
+    }
 }
