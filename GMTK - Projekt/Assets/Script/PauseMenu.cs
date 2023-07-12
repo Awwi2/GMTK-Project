@@ -101,16 +101,27 @@ public class PauseMenu : MonoBehaviour
             }
         }
     
-    void Resume()
+    public void Resume()
     {
         pauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         paused = false; 
     }
-    void Pause()
+    public void Pause()
     {
         pauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         paused = true;
+    }
+    public void Menu()
+    {
+        pauseMenuUi.SetActive(false);
+        Time.timeScale = 1f;
+        paused = false;
+        Invoke("loadMenu",0.15f);
+    }
+    private void loadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
