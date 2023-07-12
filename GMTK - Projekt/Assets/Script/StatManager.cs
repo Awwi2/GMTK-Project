@@ -142,7 +142,7 @@ public class StatManager : MonoBehaviour
         if(day % 5 == 0)
         {
             rent += 150;
-            sueMoney += 200;
+            sueMoney += 125;
             suePop += 7;
         }
         money -= rent;

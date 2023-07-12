@@ -16,9 +16,9 @@ MonoBehaviour:
   description: A glowing Sign by the road that attracts more customers.
   effect1: + Popularity
   effect2: + Rent
-  effect3: '- 2k Money'
+  effect3: '- 1.5k Money'
   image: {fileID: -7415955986125602904, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
-  moneyModifier: -2000
+  moneyModifier: -1500
   popularityModifier: 15
   rentModifier: 50
   riskModifier: 0

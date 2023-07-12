@@ -19,8 +19,8 @@ MonoBehaviour:
   effect3: '- 750 Money'
   image: {fileID: 7028969208027117126, guid: 2e4948714769dc044b420b9a30cc97ea, type: 3}
   moneyModifier: -750
-  popularityModifier: 0
+  popularityModifier: 15
   rentModifier: 75
   riskModifier: 0
-  moneyPerPersonModifier: 15
+  moneyPerPersonModifier: 5
   rarity: 0
