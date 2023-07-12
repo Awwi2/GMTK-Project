@@ -117,7 +117,7 @@ public class ManageCards : MonoBehaviour
             StatManager.Instance.risk = 0;
         } else if (card1.effect1 == "- Fine When Sued")
         {
-            StatManager.Instance.sueMoney -= 500;
+            StatManager.Instance.sueMoney -= 350;
             StatManager.Instance.suePop -= 5;
         }
         StatManager.Instance.money += card1.moneyModifier;
@@ -146,7 +146,7 @@ public class ManageCards : MonoBehaviour
         }
         else if (card2.effect1 == "- Fine When Sued")
         {
-            StatManager.Instance.sueMoney -= 500;
+            StatManager.Instance.sueMoney -= 350;
             StatManager.Instance.suePop -= 5;
         }
         StatManager.Instance.money += card2.moneyModifier;
@@ -174,7 +174,7 @@ public class ManageCards : MonoBehaviour
         }
         else if (card3.effect1 == "- Fine When Sued")
         {
-            StatManager.Instance.sueMoney -= 500;
+            StatManager.Instance.sueMoney -= 350;
             StatManager.Instance.suePop -= 5;
         }
         StatManager.Instance.money += card3.moneyModifier;
