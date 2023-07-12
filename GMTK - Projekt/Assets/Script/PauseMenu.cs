@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEditor.UI;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
 
     [SerializeField] AudioMixer masterVolume;
-    [SerializeField] UnityEngine.UI.Slider MasterSlider;
-    [SerializeField] UnityEngine.UI.Slider SFXSlider;
-    [SerializeField] UnityEngine.UI.Slider MusicSlider;
+    [SerializeField] Slider MasterSlider;
+    [SerializeField] Slider SFXSlider;
+    [SerializeField] Slider MusicSlider;
 
 
     public static bool paused = false;
