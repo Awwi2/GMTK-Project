@@ -24,11 +24,6 @@ public class TutorialManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
-        {
-            Time.timeScale = 1;
-            SceneManager.LoadScene("Menu");
-        }
 
         if (current == 1)
         {

@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
     public static bool paused = false;
 
     public GameObject pauseMenuUi;
-
+    private float localTimeScale;
     public void Awake()
     {
         pauseMenuUi.SetActive(true);
@@ -29,7 +29,6 @@ public class PauseMenu : MonoBehaviour
         masterVolume.SetFloat("SFXVolume", SFXVol);
         MasterSlider.value = (masterVol / 40) + 1;
         MusicSlider.value = (musicVol / 40) + 1;
-        Debug.Log("Loaded Master Volume from PlayerPrefs:" + masterVol);
         pauseMenuUi.SetActive(false);
 
     }
@@ -59,7 +58,6 @@ public class PauseMenu : MonoBehaviour
         }
         masterVolume.SetFloat("MasterVolume", value);
         PlayerPrefs.SetFloat("MasterVolume", value);
-        Debug.Log("Set Master Volume to:" + value + "And set Player Prefs to the same Value");
     }
     public void SetMusicVolumeFromSlider()
     {
@@ -87,7 +85,7 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Tutorial World Scene" && SceneManager.GetActiveScene().name != "Tutorial Poker Table" && SceneManager.GetActiveScene().name != "Menu")
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (paused)
                 {
@@ -101,13 +99,14 @@ public class PauseMenu : MonoBehaviour
         }
     
     public void Resume()
-    {
+    {       
         pauseMenuUi.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = localTimeScale;      
         paused = false; 
     }
     public void Pause()
     {
+        localTimeScale = Time.timeScale;
         pauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         paused = true;

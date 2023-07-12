@@ -30,11 +30,6 @@ public class TutorialCards : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
-        {
-            SceneManager.LoadScene("Menu");
-        }
-
         if (current == 1)
         {
             tutorial.text = "It looks like you lost some money, this is you rent";
