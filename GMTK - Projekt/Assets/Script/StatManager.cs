@@ -214,6 +214,7 @@ public class StatManager : MonoBehaviour
         popularity = standartPopularity;
         rent = standartRent;
         day = standartDay;
+        neonSign = false;
     }
     public void ResetHighscore()
     {
