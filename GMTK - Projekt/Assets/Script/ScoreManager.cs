@@ -11,6 +11,7 @@ public class ScoreManager : MonoBehaviour
     Text[] Texts;
     private Text scoreText;
     private Text highscoreText;
+    private Text highscoreTitel;
 
     public void FindUI()
     {
@@ -24,6 +25,10 @@ public class ScoreManager : MonoBehaviour
             else if (t.name == "Highscore-Text")
             {
                 highscoreText = t;
+            }
+            else if (t.name == "Highscore-Title-obj")
+            {
+                highscoreTitel = t;
             }
         }
     }
@@ -43,13 +48,14 @@ public class ScoreManager : MonoBehaviour
     public void UpdateScore()
     {
         Score = StatManager.Instance.day;
+        FindUI();
 
         if (Score >= PlayerPrefs.GetInt("Highscore"))
         {
+            highscoreTitel.gameObject.GetComponent<Animator>().Play("highscore_new");
             PlayerPrefs.SetInt("Highscore", Score);
         }
 
-        FindUI();
         scoreText.text = "Your Casino was running for " + Score.ToString() + " Days";
         highscoreText.text = "Your Highscore is " + PlayerPrefs.GetInt("Highscore", Score).ToString() + " Days";
     }

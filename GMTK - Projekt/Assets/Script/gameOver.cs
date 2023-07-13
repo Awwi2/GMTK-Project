@@ -11,10 +11,14 @@ public class gameOver : MonoBehaviour
     {
         if (StatManager.Instance.money < 0)
         {
-            Time.timeScale = 0f;
             GameOverScreen.SetActive(true);
             ScoreManager.Instance.UpdateScore();
+            Invoke("timeScale", 1.17f);
         }
+    }
+    private void timeScale()
+    {
+        Time.timeScale = 0f;
     }
     public void TryAgain()
     {
