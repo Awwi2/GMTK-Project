@@ -113,6 +113,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Menu()
     {
+        StatManager.Instance.ResetValues();
         pauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         paused = false;
