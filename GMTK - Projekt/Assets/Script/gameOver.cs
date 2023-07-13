@@ -9,7 +9,7 @@ public class gameOver : MonoBehaviour
 
     void Update()
     {
-        if (StatManager.Instance.money <= 0)
+        if (StatManager.Instance.money < 0)
         {
             Time.timeScale = 0f;
             GameOverScreen.SetActive(true);
