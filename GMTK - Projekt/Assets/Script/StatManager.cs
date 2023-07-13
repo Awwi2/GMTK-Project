@@ -27,10 +27,15 @@ public class StatManager : MonoBehaviour
     [Min(0)]
     public int day = 0;
     private int standartDay;
+    [Min(0)]
+    public int sueMoney = 750;
+    private int standartSueMoney;
+    [Min(0)]
+    public int suePop = 10;
+    private int standartSuePop;
+
 
     public bool neonSign;
-    public int sueMoney = 750;
-    public int suePop = 10;
 
     Text[] Texts;
     private Text mon;
@@ -108,6 +113,8 @@ public class StatManager : MonoBehaviour
         standartPopularity = popularity;
         standartRent = rent;
         standartDay = day;
+        standartSueMoney = sueMoney;
+        standartSuePop = suePop;
 
         UpdateValues();
 
@@ -214,6 +221,10 @@ public class StatManager : MonoBehaviour
         popularity = standartPopularity;
         rent = standartRent;
         day = standartDay;
+        sueMoney = standartSueMoney;
+        suePop = standartSuePop;
+        neonSign = false;
+
     }
     public void ResetHighscore()
     {

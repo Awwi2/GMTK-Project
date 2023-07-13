@@ -20,7 +20,7 @@ public class dealer : MonoBehaviour
         if (collision.gameObject.CompareTag("Finish"))
         {
             speed = 0f;
-            animator.SetTrigger("goIdle");
+            animator.Play("dealer_start-idle");
             Invoke("setReady", 1.3333f);
         }
     }
