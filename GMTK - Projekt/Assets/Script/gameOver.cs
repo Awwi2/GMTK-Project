@@ -6,22 +6,24 @@ using UnityEngine.SceneManagement;
 public class gameOver : MonoBehaviour
 {
     public GameObject GameOverScreen;
+    bool tryload;
 
+    private void Awake()
+    {
+        tryload = false;
+    }
     void Update()
     {
-        if (StatManager.Instance.money < 0)
+        if (StatManager.Instance.money < 0 && tryload != true)
         {
             GameOverScreen.SetActive(true);
             ScoreManager.Instance.UpdateScore();
-            Invoke("timeScale", 1.17f);
+            Time.timeScale = 0f;
         }
-    }
-    private void timeScale()
-    {
-        Time.timeScale = 0f;
     }
     public void TryAgain()
     {
+        tryload = true;
         Time.timeScale = 1f;
         StatManager.Instance.ResetValues();
         Invoke("loadWorld",0.2f);
@@ -33,6 +35,7 @@ public class gameOver : MonoBehaviour
     }
     public void StartMenu()
     {
+        tryload = true;
         Time.timeScale = 1f;
         StatManager.Instance.ResetValues();
         Invoke("loadMenu", 0.2f);
