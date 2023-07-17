@@ -18,6 +18,9 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUi;
     private float localTimeScale;
+    //THis is not the Sound Menu but the other one
+    public GameObject MainPauseMenu;
+    public GameObject SoundMenu;
     public void Awake()
     {
         pauseMenuUi.SetActive(true);
@@ -93,6 +96,8 @@ public class PauseMenu : MonoBehaviour
                 }
                 else
                 {
+                    SoundMenu.SetActive(false);
+                    MainPauseMenu.SetActive(true);
                     Pause();
                 }
             }
