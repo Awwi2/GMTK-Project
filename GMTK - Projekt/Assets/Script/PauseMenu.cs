@@ -21,19 +21,13 @@ public class PauseMenu : MonoBehaviour
     //THis is not the Sound Menu but the other one
     public GameObject MainPauseMenu;
     public GameObject SoundMenu;
+    public void Start()
+    {
+        Setup();
+    }
     public void Awake()
     {
-        pauseMenuUi.SetActive(true);
-        float masterVol = PlayerPrefs.GetFloat("MasterVolume");
-        float musicVol = PlayerPrefs.GetFloat("MusicVolume");
-        float SFXVol = PlayerPrefs.GetFloat("SFXVolume");
-        masterVolume.SetFloat("MasterVolume", masterVol);
-        masterVolume.SetFloat("MusicVolume", musicVol);
-        masterVolume.SetFloat("SFXVolume", SFXVol);
-        MasterSlider.value = (masterVol / 40) + 1;
-        MusicSlider.value = (musicVol / 40) + 1;
-        pauseMenuUi.SetActive(false);
-
+        Setup();
     }
     public void GetAudioMixerVolume()
     {
@@ -127,5 +121,19 @@ public class PauseMenu : MonoBehaviour
     private void loadMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+    private void Setup()
+    {
+        //This method exists bc DRY
+        pauseMenuUi.SetActive(true);
+        float masterVol = PlayerPrefs.GetFloat("MasterVolume");
+        float musicVol = PlayerPrefs.GetFloat("MusicVolume");
+        float SFXVol = PlayerPrefs.GetFloat("SFXVolume");
+        masterVolume.SetFloat("MasterVolume", masterVol);
+        masterVolume.SetFloat("MusicVolume", musicVol);
+        masterVolume.SetFloat("SFXVolume", SFXVol);
+        MasterSlider.value = (masterVol / 40) + 1;
+        MusicSlider.value = (musicVol / 40) + 1;
+        pauseMenuUi.SetActive(false);
     }
 }
